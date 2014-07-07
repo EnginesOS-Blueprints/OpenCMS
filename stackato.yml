@@ -1,0 +1,13 @@
+name: opencms-test
+framework:
+ type: tomcat
+services:
+ opencms-test: mysql
+
+hooks:
+ pre-staging:
+  - bash stackato-pre-setup.sh
+ post-staging:
+  - bash stackato-setup.sh
+ pre-running:
+  - sh completeinstall.sh
