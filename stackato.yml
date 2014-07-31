@@ -1,5 +1,5 @@
 name: opencms-test
-memory: 196
+memory: 228
 framework:
  type: tomcat
 services:
